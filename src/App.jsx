@@ -33,9 +33,9 @@ const App = () => {
 
         // Combina tutte le domande in un unico array
         const allQuestions = [
-          //...binaryData.questions,
-          //...truthData.questions,
-          //...flowData.questions,
+          ...binaryData.questions,
+          ...truthData.questions,
+          ...flowData.questions,
           ...chartData.questions
         ];
 
