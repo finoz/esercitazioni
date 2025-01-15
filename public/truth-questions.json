@@ -1,0 +1,207 @@
+{
+	"questions": [
+	  {
+		"id": "t1",
+		"type": "truthTable",
+		"question": "Se A = vero e B = falso, quanto vale A ˄ B (AND)?",
+		"options": ["Vero", "Falso"],
+		"correctAnswer": "Falso",
+		"explanation": "L'operatore AND (˄) restituisce vero solo se entrambi gli operandi sono veri. Con A=vero e B=falso, il risultato è falso."
+	  },
+	  {
+		"id": "t2",
+		"type": "truthTable",
+		"question": "Se A = falso, quanto vale ¬A (NOT A)?",
+		"options": ["Vero", "Falso"],
+		"correctAnswer": "Vero",
+		"explanation": "L'operatore NOT (¬) inverte il valore di verità. Se A è falso, ¬A è vero."
+	  },
+	  {
+		"id": "t3",
+		"type": "truthTable",
+		"question": "Se A = vero e B = falso, quanto vale A ˅ B (OR)?",
+		"options": ["Vero", "Falso"],
+		"correctAnswer": "Vero",
+		"explanation": "L'operatore OR (˅) restituisce vero se almeno uno dei due operandi è vero. Con A=vero e B=falso, il risultato è vero."
+	  },
+	  {
+		"id": "t4",
+		"type": "truthTable",
+		"question": "Se A = falso e B = falso, quanto vale A ˅ B (OR)?",
+		"options": ["Vero", "Falso"],
+		"correctAnswer": "Falso",
+		"explanation": "L'operatore OR (˅) restituisce falso solo se entrambi gli operandi sono falsi."
+	  },
+	  {
+		"id": "t5",
+		"type": "truthTable",
+		"question": "Se A = vero e B = vero, quanto vale A ˄ B (AND)?",
+		"options": ["Vero", "Falso"],
+		"correctAnswer": "Vero",
+		"explanation": "L'operatore AND (˄) restituisce vero quando entrambi gli operandi sono veri."
+	  },
+  
+	  {
+		"id": "t6",
+		"type": "truthTable",
+		"question": "Se A = vero e B = falso, quanto vale ¬(A ˄ B)?",
+		"options": ["Vero", "Falso"],
+		"correctAnswer": "Vero",
+		"explanation": "Prima calcoliamo A ˄ B = falso (perché B è falso), poi applichiamo NOT, quindi il risultato è vero."
+	  },
+	  {
+		"id": "t7",
+		"type": "truthTable",
+		"question": "Se A = falso e B = vero, quanto vale (¬A) ˅ B?",
+		"options": ["Vero", "Falso"],
+		"correctAnswer": "Vero",
+		"explanation": "¬A è vero (perché A è falso) e B è vero, quindi OR restituisce vero."
+	  },
+	  {
+		"id": "t8",
+		"type": "truthTable",
+		"question": "Se A = vero e B = falso, quanto vale ¬A ˅ ¬B?",
+		"options": ["Vero", "Falso"],
+		"correctAnswer": "Vero",
+		"explanation": "¬A è falso (A è vero) ma ¬B è vero (B è falso), quindi OR restituisce vero."
+	  },
+	  {
+		"id": "t9",
+		"type": "truthTable",
+		"question": "Se A = vero e B = vero, quanto vale ¬(A ˅ B)?",
+		"options": ["Vero", "Falso"],
+		"correctAnswer": "Falso",
+		"explanation": "A ˅ B è vero (entrambi veri), quindi ¬(A ˅ B) è falso."
+	  },
+	  {
+		"id": "t10",
+		"type": "truthTable",
+		"question": "Se A = falso e B = falso, quanto vale ¬A ˄ ¬B?",
+		"options": ["Vero", "Falso"],
+		"correctAnswer": "Vero",
+		"explanation": "¬A è vero e ¬B è vero, quindi AND restituisce vero."
+	  },
+  
+	  {
+		"id": "t11",
+		"type": "truthTable",
+		"question": "\"È lunedì\" ˅ \"Non è lunedì\" è:",
+		"options": ["Sempre vero", "Sempre falso", "Dipende dal giorno", "Non determinabile"],
+		"correctAnswer": "Sempre vero",
+		"explanation": "È una tautologia (P ˅ ¬P), che è sempre vera indipendentemente dal valore di P."
+	  },
+	  {
+		"id": "t12",
+		"type": "truthTable",
+		"question": "\"Piove\" ˄ \"Non piove\" è:",
+		"options": ["Sempre falso", "Sempre vero", "Dipende dal tempo", "Non determinabile"],
+		"correctAnswer": "Sempre falso",
+		"explanation": "È una contraddizione (P ˄ ¬P), che è sempre falsa indipendentemente dal valore di P."
+	  },
+	  {
+		"id": "t13",
+		"type": "truthTable",
+		"question": "Se per andare a scuola devo prendere l'autobus E fare il biglietto, la condizione è soddisfatta se:",
+		"options": [
+		  "Prendo l'autobus e faccio il biglietto",
+		  "Prendo l'autobus senza biglietto",
+		  "Non prendo l'autobus ma ho il biglietto",
+		  "Basta avere il biglietto"
+		],
+		"correctAnswer": "Prendo l'autobus e faccio il biglietto",
+		"explanation": "È un AND logico: entrambe le condizioni devono essere vere."
+	  },
+	  {
+		"id": "t14",
+		"type": "truthTable",
+		"question": "Per superare l'esame devo studiare teoria O fare esercizi. La condizione NON è soddisfatta se:",
+		"options": [
+		  "Non studio teoria e non faccio esercizi",
+		  "Studio teoria ma non faccio esercizi",
+		  "Non studio teoria ma faccio esercizi",
+		  "Studio teoria e faccio esercizi"
+		],
+		"correctAnswer": "Non studio teoria e non faccio esercizi",
+		"explanation": "È un OR logico: fallisce solo se entrambe le condizioni sono false."
+	  },
+	  {
+		"id": "t15",
+		"type": "truthTable",
+		"question": "\"Se non hai studiato, non passi l'esame\" equivale a:",
+		"options": [
+		  "Se passi l'esame, hai studiato",
+		  "Se studi, passi l'esame",
+		  "Se non passi l'esame, non hai studiato",
+		  "Se studi, non passi l'esame"
+		],
+		"correctAnswer": "Se passi l'esame, hai studiato",
+		"explanation": "È la contropositiva dell'implicazione, che è logicamente equivalente."
+	  },
+  
+	  {
+		"id": "t16",
+		"type": "truthTable",
+		"question": "¬(A ˄ B) è logicamente equivalente a:",
+		"options": [
+		  "¬A ˅ ¬B",
+		  "¬A ˄ ¬B",
+		  "A ˅ B",
+		  "A ˄ B"
+		],
+		"correctAnswer": "¬A ˅ ¬B",
+		"explanation": "Legge di De Morgan: la negazione di AND diventa OR delle negazioni."
+	  },
+	  {
+		"id": "t17",
+		"type": "truthTable",
+		"question": "¬(A ˅ B) è logicamente equivalente a:",
+		"options": [
+		  "¬A ˄ ¬B",
+		  "¬A ˅ ¬B",
+		  "A ˄ B",
+		  "A ˅ B"
+		],
+		"correctAnswer": "¬A ˄ ¬B",
+		"explanation": "Legge di De Morgan: la negazione di OR diventa AND delle negazioni."
+	  },
+	  {
+		"id": "t18",
+		"type": "truthTable",
+		"question": "A ˅ A è logicamente equivalente a:",
+		"options": [
+		  "A",
+		  "A ˄ A",
+		  "¬A",
+		  "Vero"
+		],
+		"correctAnswer": "A",
+		"explanation": "Proprietà di idempotenza: OR di un valore con se stesso dà lo stesso valore."
+	  },
+	  {
+		"id": "t19",
+		"type": "truthTable",
+		"question": "A ˄ (B ˅ C) è logicamente equivalente a:",
+		"options": [
+		  "(A ˄ B) ˅ (A ˄ C)",
+		  "(A ˅ B) ˄ (A ˅ C)",
+		  "A ˅ (B ˄ C)",
+		  "(A ˄ B) ˄ (A ˄ C)"
+		],
+		"correctAnswer": "(A ˄ B) ˅ (A ˄ C)",
+		"explanation": "Proprietà distributiva dell'AND rispetto all'OR."
+	  },
+	  {
+		"id": "t20",
+		"type": "truthTable",
+		"question": "Se A implica B (A → B), questo equivale a:",
+		"options": [
+		  "¬A ˅ B",
+		  "A ˄ B",
+		  "¬A ˄ B",
+		  "A ˅ B"
+		],
+		"correctAnswer": "¬A ˅ B",
+		"explanation": "L'implicazione A → B è logicamente equivalente a ¬A ˅ B."
+	  }
+	]
+  }

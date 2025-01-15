@@ -1,0 +1,222 @@
+{
+	"questions": [
+		{
+			"id": "vf1",
+			"type": "flowchart",
+			"question": "Cosa fa questo algoritmo?",
+			"diagram": "flowchart TB\n    Start([Start]) --> Init[i = 1]\n    Init --> Check{i <= 5}\n    Check -->|Sì| Print[/Stampa i/]\n    Print --> Inc[i = i + 1]\n    Inc --> Check\n    Check -->|No| End([End])",
+			"options": [
+			  "Stampa i numeri da 1 a 5",
+			  "Stampa i numeri da 0 a 5",
+			  "Stampa i numeri da 1 a 4",
+			  "Stampa i numeri da 0 a 4"
+			],
+			"correctAnswer": "Stampa i numeri da 1 a 5",
+			"explanation": "È un ciclo FOR che inizia da 1, continua finché i≤5, e incrementa i di 1 ad ogni passo, stampando ogni valore."
+		  },
+		  {
+			"id": "vf2",
+			"type": "flowchart",
+			"question": "Se l'utente inserisce il numero 15, cosa verrà stampato?",
+			"diagram": "flowchart TB\n    Start([Start]) --> Input[/Definisci num/]\n    Input --> Check{num > 10}\n    Check -->|Sì| PrintA[/Stampa 'Grande'/]\n    Check -->|No| PrintB[/Stampa 'Piccolo'/]\n    PrintA --> End([End])\n    PrintB --> End",
+			"options": [
+			  "Grande",
+			  "Piccolo",
+			  "Grande e Piccolo",
+			  "Nulla"
+			],
+			"correctAnswer": "Grande",
+			"explanation": "È un semplice IF/ELSE: se il numero è maggiore di 10 stampa 'Grande', altrimenti 'Piccolo'. 15 è maggiore di 10."
+		  },
+		  {
+			"id": "vf3",
+			"type": "flowchart",
+			"question": "Che valore avrà somma alla fine dell'esecuzione con N = 4?",
+			"diagram": "flowchart TB\n    Start([Start]) --> Init[/Definisci N\nsomma = 0/]\n    Init --> ForInit[i = 1]\n    ForInit --> Check{i <= N}\n    Check -->|Sì| Add[somma = somma + i]\n    Add --> Inc[i = i + 1]\n    Inc --> Check\n    Check -->|No| Print[/Stampa somma/]\n    Print --> End([End])",
+			"options": ["10", "6", "4", "8"],
+			"correctAnswer": "10",
+			"explanation": "Il programma somma i numeri da 1 a N. Con N=4: somma = 1 + 2 + 3 + 4 = 10"
+		  },
+		  {
+			"id": "vf4",
+			"type": "flowchart",
+			"question": "Con quale valore inserito verrà stampato 'Medio'?",
+			"diagram": "flowchart TB\n    Start([Start]) --> Input[/Definisci voto/]\n    Input --> Check1{voto >= 18}\n    Check1 -->|No| PrintA[/Stampa 'Insufficiente'/]\n    Check1 -->|Sì| Check2{voto >= 25}\n    Check2 -->|No| PrintB[/Stampa 'Medio'/]\n    Check2 -->|Sì| PrintC[/Stampa 'Alto'/]\n    PrintA --> End([End])\n    PrintB --> End\n    PrintC --> End",
+			"options": ["20", "17", "26", "30"],
+			"correctAnswer": "20",
+			"explanation": "'Medio' viene stampato quando il voto è ≥ 18 ma < 25. 20 soddisfa entrambe le condizioni."
+		  },
+		  {
+			"id": "vf5",
+			"type": "flowchart",
+			"question": "Quante volte verrà eseguito il ciclo con x = 8?",
+			"diagram": "flowchart TB\n    Start([Start]) --> Init[x = 8]\n    Init --> Check{x > 0}\n    Check -->|Sì| Proc[x = x - 2]\n    Proc --> Check\n    Check -->|No| End([End])",
+			"options": ["4", "3", "5", "8"],
+			"correctAnswer": "4",
+			"explanation": "Il valore di x segue la sequenza: 8 -> 6 -> 4 -> 2 -> 0, quindi il ciclo viene eseguito 4 volte."
+		  },
+		  {
+			"id": "vf6",
+			"type": "flowchart",
+			"question": "Con input = 12, qual è l'output?",
+			"diagram": "flowchart TB\n    Start([Start]) --> Input[/Definisci num/]\n    Input --> Init[result = 0]\n    Init --> While{num >= 1}\n    While -->|Sì| Op[result = result + 1<br>num = num / 3]\n    Op --> While\n    While -->|No| Print[/Stampa result/]\n    Print --> End([End])",
+			"options": ["3", "2", "4", "5"],
+			"correctAnswer": "3",
+			"explanation": "Il programma conta quante volte 3 entra in num. 12/3=4, 4/3=1.33, 1.33/3=0.44. Quindi 3 volte."
+		  },
+		  {
+			"id": "vf7",
+			"type": "flowchart",
+			"question": "Se una persona ha 17 anni, cosa stamperà l'algoritmo?",
+			"diagram": "flowchart TB\n    Start([Start]) --> Input[/Leggi età/]\n    Input --> Check1{età >= 18}\n    Check1 -->|Sì| PrintA[/Stampa 'Puoi guidare'/]\n    Check1 -->|No| Check2{età >= 16}\n    Check2 -->|Sì| PrintB[/Stampa 'Puoi fare il foglio rosa'/]\n    Check2 -->|No| PrintC[/Stampa 'Troppo giovane'/]\n    PrintA --> End([End])\n    PrintB --> End\n    PrintC --> End",
+			"options": [
+			  "Puoi guidare",
+			  "Puoi fare il foglio rosa",
+			  "Troppo giovane",
+			  "Nessun messaggio"
+			],
+			"correctAnswer": "Puoi fare il foglio rosa",
+			"explanation": "Con 17 anni: prima verifica se età >= 18 (No), poi verifica se età >= 16 (Sì), quindi stampa 'Puoi fare il foglio rosa'"
+		  },
+		  {
+			"id": "vf8",
+			"type": "flowchart",
+			"question": "Cosa fa questo algoritmo?",
+			"diagram": "flowchart TB\n    Start([Start]) --> Input[/Definisci n/]\n    Input --> Init[count = 0]\n    Init --> While{n > 0}\n    While -->|Sì| Op[count = count + 1\n = n / 10]\n    Op --> While\n    While -->|No| Print[/Stampa count/]\n    Print --> End([End])",
+			"options": [
+			  "Conta il numero di cifre",
+			  "Somma le cifre",
+			  "Conta i divisori",
+			  "Calcola la media delle cifre"
+			],
+			"correctAnswer": "Conta il numero di cifre",
+			"explanation": "Divide ripetutamente per 10 e conta quante volte può farlo. Ad esempio: 123 -> 12 -> 1 -> 0 (3 cifre)"
+		  },
+		  {
+			"id": "vf9",
+			"type": "flowchart",
+			"question": "Con quali valori di temperatura verrà stampato 'Normale'?",
+			"diagram": "flowchart TB\n    Start([Start]) --> Input[/Definisci temperatura/]\n    Input --> Check1{temperatura < 35}\n    Check1 -->|Sì| PrintA[/Stampa 'Bassa'/]\n    Check1 -->|No| Check2{temperatura <= 37.5}\n    Check2 -->|Sì| PrintB[/Stampa 'Normale'/]\n    Check2 -->|No| PrintC[/Stampa 'Alta'/]\n    PrintA --> End([End])\n    PrintB --> End\n    PrintC --> End",
+			"options": [
+			  "35 ≤ temp ≤ 37.5",
+			  "temp < 35",
+			  "temp > 37.5",
+			  "temp = 37.5"
+			],
+			"correctAnswer": "35 ≤ temp ≤ 37.5",
+			"explanation": "'Normale' viene stampato quando la temperatura è maggiore o uguale a 35 E minore o uguale a 37.5"
+		  },
+		  
+		  {
+			"id": "vf10",
+			"type": "flowchart",
+			"question": "Se ho 100 euro e compro: un libro (25€), una penna (3€) e un quaderno (7€), cosa stamperà l'algoritmo?",
+			"diagram": "flowchart TB\n    Start([Start]) --> Init[resto = 100]\n    Init --> Input[/Leggi spesa/]\n    Input --> Check{spesa > 0}\n    Check -->|Sì| Op[resto = resto - spesa]\n    Op --> Input\n    Check -->|No| Print[/Stampa resto/]\n    Print --> End([End])",
+			"options": [
+			  "65",
+			  "100",
+			  "35",
+			  "75"
+			],
+			"correctAnswer": "65",
+			"explanation": "Partendo da 100€, l'algoritmo sottrae ogni spesa: 100 - 25 = 75, 75 - 3 = 72, 72 - 7 = 65€. Quando inseriamo 0 come spesa, stampa il resto finale di 65€"
+		  },
+		  {
+			"id": "vf11",
+			"type": "flowchart",
+			"question": "Cosa stampa questo algoritmo con N = 3?",
+			"diagram": "flowchart TB\n    Start([Start]) --> Init[/Definisci N\ni = 1/]\n    Init --> Check{i <= N}\n    Check -->|Sì| Print[/'Stampa *' ripetuto i volte/]\n    Print --> Inc[i = i + 1]\n    Inc --> Check\n    Check -->|No| End([End])",
+			"options": [
+			  "*\n**\n***",
+			  "***\n**\n*",
+			  "***",
+			  "*****"
+			],
+			"correctAnswer": "*\n**\n***",
+			"explanation": "Stampa un triangolo di asterischi. Con N=3: prima 1 asterisco, poi 2, infine 3."
+		  },
+		  {
+			"id": "vf13",
+			"type": "flowchart",
+			"question": "Quale numero NON genererà l'output 'Valido'?",
+			"diagram": "flowchart TB\n    Start([Start]) --> Input[/Definisci n/]\n    Input --> Check1{n > 0}\n    Check1 -->|No| Invalid[/Stampa 'Non valido'/]\n    Check1 -->|Sì| Check2{n <= 100}\n    Check2 -->|Sì| Valid[/Stampa 'Valido'/]\n    Check2 -->|No| Invalid\n    Valid --> End([End])\n    Invalid --> End",
+			"options": ["150", "1", "100", "50"],
+			"correctAnswer": "150",
+			"explanation": "Il numero deve essere > 0 e ≤ 100. 150 è maggiore di 100, quindi non è valido."
+		  },
+		  {
+			"id": "vf14",
+			"type": "flowchart",
+			"question": "Cosa fa questo algoritmo?",
+			"diagram": "flowchart TB\n    Start([Start]) --> Input[/Definisci stringa/]\n    Input --> Init[i = 0\nj = lunghezza - 1]\n    Init --> While{i < j}\n    While -->|Sì| Check{str[i] != str[j]}\n    Check -->|Sì| No[/Stampa 'No'/]\n    Check -->|No| Inc[i = i + 1\nj = j - 1]\n    Inc --> While\n    While -->|No| Yes[/Stampa 'Sì'/]\n    Yes --> End([End])\n    No --> End",
+			"options": [
+			  "Verifica se è palindroma (plaindromo = Parola o frase leggibile uguale al contrario, es: 'anna', 'otto')",
+			  "Conta le vocali",
+			  "Inverte la stringa",
+			  "Conta i caratteri"
+			],
+			"correctAnswer": "Verifica se è palindroma",
+			"explanation": "Confronta i caratteri da inizio e fine verso il centro, verificando se la stringa è palindroma (es: 'anna', 'otto')"
+		  },
+		  {
+			"id": "vf15",
+			"type": "flowchart",
+			"question": "Con N = 4, quanti asterischi verranno stampati in totale?",
+			"diagram": "flowchart TB\n    Start([Start]) --> Init[/Definisci N/]\n    Init --> ForI[i = 1]\n    ForI --> CheckI{i <= N}\n    CheckI -->|Sì| ForJ[j = 1]\n    ForJ --> CheckJ{j <= i}\n    CheckJ -->|Sì| Print[/'Stampa *'/]\n    Print --> IncJ[j = j + 1]\n    IncJ --> CheckJ\n    CheckJ -->|No| NewLine[/Vai a capo/]\n    NewLine --> IncI[i = i + 1]\n    IncI --> CheckI\n    CheckI -->|No| End([End])",
+			"options": ["10", "16", "4", "8"],
+			"correctAnswer": "10",
+			"explanation": "Stampa un triangolo: 1 + 2 + 3 + 4 = 10 asterischi totali"
+		  },
+		  {
+			"id": "vf17",
+			"type": "flowchart",
+			"question": "Quante iterazioni farà il ciclo con i numeri 12, 15, 3, 8, 0?",
+			"diagram": "flowchart TB\n    Start([Start]) --> Init[max = 0]\n    Init --> Input[/Definisci n/]\n    Input --> Check{n > 0}\n    Check -->|Sì| Compare{n > max}\n    Compare -->|Sì| Update[max = n]\n    Compare -->|No| Input\n    Update --> Input\n    Check -->|No| Print[/Stampa max/]\n    Print --> End([End])",
+			"options": ["4", "5", "3", "6"],
+			"correctAnswer": "5",
+			"explanation": "Il ciclo si ripete per ogni numero inserito fino allo 0, quindi 5 volte"
+		  },
+		  {
+			"id": "vf18",
+			"type": "flowchart",
+			"question": "Quale sequenza di input produrrà output = 3?",
+			"diagram": "flowchart TB\n    Start([Start]) --> Init[count = 0]\n    Init --> Input[/Definisci x/]\n    Input --> Check{x >= 0}\n    Check -->|Sì| IsEven{x % 2 = 0}\n    IsEven -->|Sì| Inc[count = count + 1]\n    IsEven -->|No| Input\n    Inc --> Input\n    Check -->|No| Print[/Stampa count/]\n    Print --> End([End])",
+			"options": [
+			  "4, 2, 6, -1",
+			  "1, 2, 3, -1",
+			  "2, 1, 4, -1",
+			  "2, 3, 5, -1"
+			],
+			"correctAnswer": "4, 2, 6, -1",
+			"explanation": "L'algoritmo conta i numeri pari. La sequenza 4,2,6,-1 contiene 3 numeri pari"
+		  },
+		  {
+			"id": "vf19",
+			"type": "flowchart",
+			"question": "Con input = 5, quale sarà la sequenza stampata?",
+			"diagram": "flowchart TB\n    Start([Start]) --> Input[/Definisci n/]\n    Input --> For1[i = n]\n    For1 --> Check1{i > 0}\n    Check1 -->|Sì| For2[j = 1]\n    For2 --> Check2{j <= i}\n    Check2 -->|Sì| Print[/Stampa j/]\n    Print --> Inc2[j = j + 1]\n    Inc2 --> Check2\n    Check2 -->|No| Dec1[i = i - 1]\n    Dec1 --> Check1\n    Check1 -->|No| End([End])",
+			"options": [
+			  "12345 1234 123 12 1",
+			  "54321 4321 321 21 1",
+			  "12345 2345 345 45 5",
+			  "11111 2222 333 44 5"
+			],
+			"correctAnswer": "12345 1234 123 12 1",
+			"explanation": "Stampa numeri progressivi per ogni riga, diminuendo la lunghezza ogni volta"
+		  },
+		  {
+			"id": "vf20",
+			"type": "flowchart",
+			"question": "Cosa calcola questo algoritmo?",
+			"diagram": "flowchart TB\n    Start([Start]) --> Input[/Definisci n/]\n    Input --> Init[somma = 0]\n    Init --> While{n > 0}\n    While -->|Sì| Op[somma = somma + n\nn = n - 1]\n    Op --> While\n    While -->|No| Print[/Stampa somma/]\n    Print --> End([End])",
+			"options": [
+			  "La somma dei numeri da 1 a n",
+			  "La somma dei numeri da 0 a n",
+			  "Il prodotto dei numeri da 1 a n",
+			  "La media dei numeri da 1 a n"
+			],
+			"correctAnswer": "La somma dei numeri da 1 a n",
+			"explanation": "L'algoritmo prende un numero n e somma tutti i numeri da 1 fino a n. Es: con n=3 calcola 1+2+3=6"
+		}
+	]
+  }

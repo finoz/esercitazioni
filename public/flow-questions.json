@@ -1,0 +1,222 @@
+{
+	"questions": [
+	  {
+		"id": "f1",
+		"type": "flowchart",
+		"question": "Per il problema 'Ripeti finché l'utente non inserisce un numero valido', quale struttura è più appropriata?",
+		"options": ["WHILE", "FOR", "IF/ELSE", "SWITCH"],
+		"correctAnswer": "WHILE",
+		"explanation": "Il WHILE è ideale quando non sappiamo a priori quante iterazioni serviranno, e dobbiamo ripetere finché una condizione diventa vera/falsa."
+	  },
+	  {
+		"id": "f2",
+		"type": "flowchart",
+		"question": "Per eseguire un'operazione esattamente 100 volte, quale struttura è più adatta?",
+		"options": ["FOR", "WHILE", "IF/ELSE", "DO-WHILE"],
+		"correctAnswer": "FOR",
+		"explanation": "Il ciclo FOR è ottimale quando conosciamo esattamente il numero di iterazioni necessarie."
+	  },
+	  {
+		"id": "f3",
+		"type": "flowchart",
+		"question": "In un diagramma di flusso, cosa rappresenta il rombo?",
+		"options": [
+		  "Una decisione/condizione",
+		  "Un'operazione",
+		  "L'inizio/fine",
+		  "Un input/output"
+		],
+		"correctAnswer": "Una decisione/condizione",
+		"explanation": "Il rombo nei diagrammi di flusso indica un punto di decisione, dove il flusso può prendere direzioni diverse in base a una condizione."
+	  },
+	  {
+		"id": "f4",
+		"type": "flowchart",
+		"question": "Per verificare se un numero è positivo o negativo uso:",
+		"options": ["IF/ELSE", "FOR", "WHILE", "DO-WHILE"],
+		"correctAnswer": "IF/ELSE",
+		"explanation": "IF/ELSE è la struttura adatta per decisioni binarie basate su una condizione singola."
+	  },
+	  {
+		"id": "f5",
+		"type": "flowchart",
+		"question": "Nel diagramma di flusso, il rettangolo rappresenta:",
+		"options": [
+		  "Un'operazione/elaborazione",
+		  "Una decisione",
+		  "L'input/output",
+		  "L'inizio/fine"
+		],
+		"correctAnswer": "Un'operazione/elaborazione",
+		"explanation": "Il rettangolo indica un'operazione o elaborazione da eseguire."
+	  },
+  
+	  {
+		"id": "f6",
+		"type": "flowchart",
+		"question": "Qual è l'errore in questo algoritmo?\nwhile (x > 0) {\n  print(x)\n}",
+		"options": [
+		  "Manca l'aggiornamento della variabile x",
+		  "La condizione è errata",
+		  "Manca l'inizializzazione di x",
+		  "La sintassi del while è sbagliata"
+		],
+		"correctAnswer": "Manca l'aggiornamento della variabile x",
+		"explanation": "L'algoritmo è un ciclo infinito perché x non viene mai modificata all'interno del ciclo."
+	  },
+	  {
+		"id": "f7",
+		"type": "flowchart",
+		"question": "Data la sequenza: 'for(i=0; i<5; i++) { i=i+1 }', quante volte viene eseguito il ciclo?",
+		"options": ["3", "5", "2", "4"],
+		"correctAnswer": "3",
+		"explanation": "La i viene incrementata sia nel ciclo che nel for, quindi: 0→2→4→6 (3 iterazioni)"
+	  },
+	  {
+		"id": "f8",
+		"type": "flowchart",
+		"question": "Se un ciclo FOR ha condizione 'i < 10' e incremento 'i += 2', partendo da i = 0, quante iterazioni farà?",
+		"options": ["5", "10", "4", "6"],
+		"correctAnswer": "5",
+		"explanation": "La sequenza sarà: 0,2,4,6,8 (5 numeri prima di arrivare a 10)"
+	  },
+	  {
+		"id": "f9",
+		"type": "flowchart",
+		"question": "In un ciclo while(x < 10), cosa succede se x non viene mai modificata?",
+		"options": [
+		  "Ciclo infinito",
+		  "Il ciclo non viene eseguito",
+		  "Errore di compilazione",
+		  "Il ciclo si ferma dopo 10 iterazioni"
+		],
+		"correctAnswer": "Ciclo infinito",
+		"explanation": "Se la variabile di controllo non viene modificata e la condizione è vera, il ciclo continuerà all'infinito."
+	  },
+	  {
+		"id": "f10",
+		"type": "flowchart",
+		"question": "Nel ciclo 'for(i=1; i<=5; i++)', quante volte viene stampato 'Ciao'?",
+		"options": ["5", "4", "6", "1"],
+		"correctAnswer": "5",
+		"explanation": "Il ciclo parte da 1 e arriva a 5 incluso, quindi esegue 5 iterazioni (1,2,3,4,5)"
+	  },
+  
+	  {
+		"id": "f11",
+		"type": "flowchart",
+		"question": "Per calcolare la media di N numeri non noti a priori, quale struttura useresti?",
+		"options": [
+		  "WHILE con contatore",
+		  "FOR con N fisso",
+		  "Solo IF/ELSE",
+		  "SWITCH"
+		],
+		"correctAnswer": "WHILE con contatore",
+		"explanation": "WHILE è ideale quando non sappiamo quanti numeri verranno inseriti, usando un contatore per tracciare quanti ne abbiamo processati."
+	  },
+	  {
+		"id": "f12",
+		"type": "flowchart",
+		"question": "Per controllare se una password è corretta, quale struttura è più appropriata?",
+		"options": ["IF/ELSE", "WHILE", "FOR", "DO-WHILE"],
+		"correctAnswer": "IF/ELSE",
+		"explanation": "IF/ELSE è adatto per verificare una condizione singola come il match di una password."
+	  },
+	  {
+		"id": "f13",
+		"type": "flowchart",
+		"question": "Per implementare un menu che si ripete finché l'utente non sceglie 'Esci', uso:",
+		"options": ["DO-WHILE", "FOR", "Solo IF", "SWITCH semplice"],
+		"correctAnswer": "DO-WHILE",
+		"explanation": "DO-WHILE garantisce che il menu venga mostrato almeno una volta e continui finché l'utente non sceglie di uscire."
+	  },
+	  {
+		"id": "f14",
+		"type": "flowchart",
+		"question": "Per processare ogni elemento di un array di dimensione nota, quale struttura è ottimale?",
+		"options": ["FOR", "WHILE", "IF/ELSE", "DO-WHILE"],
+		"correctAnswer": "FOR",
+		"explanation": "FOR è ideale quando conosciamo il numero esatto di elementi da processare, come in un array di dimensione nota."
+	  },
+	  {
+		"id": "f15",
+		"type": "flowchart",
+		"question": "L'istruzione 'break' in un ciclo serve a:",
+		"options": [
+		  "Uscire immediatamente dal ciclo",
+		  "Saltare alla prossima iterazione",
+		  "Terminare il programma",
+		  "Ripetere l'iterazione corrente"
+		],
+		"correctAnswer": "Uscire immediatamente dal ciclo",
+		"explanation": "break interrompe l'esecuzione del ciclo e passa all'istruzione successiva fuori dal ciclo."
+	  },
+  
+	  {
+		"id": "f16",
+		"type": "flowchart",
+		"question": "Cosa significa che un algoritmo è 'deterministico'?",
+		"options": [
+		  "Con gli stessi input produce sempre gli stessi output",
+		  "È sempre efficiente",
+		  "Termina sempre",
+		  "Non contiene cicli"
+		],
+		"correctAnswer": "Con gli stessi input produce sempre gli stessi output",
+		"explanation": "Un algoritmo deterministico, dato lo stesso input, produrrà sempre lo stesso output, senza variazioni casuali."
+	  },
+	  {
+		"id": "f17",
+		"type": "flowchart",
+		"question": "Un ciclo annidato è:",
+		"options": [
+		  "Un ciclo dentro un altro ciclo",
+		  "Un ciclo infinito",
+		  "Un ciclo con condizione composta",
+		  "Un ciclo con break"
+		],
+		"correctAnswer": "Un ciclo dentro un altro ciclo",
+		"explanation": "I cicli annidati sono cicli inseriti all'interno di altri cicli, utili per operazioni su strutture bidimensionali o problemi complessi."
+	  },
+	  {
+		"id": "f18",
+		"type": "flowchart",
+		"question": "La differenza principale tra WHILE e DO-WHILE è:",
+		"options": [
+		  "DO-WHILE esegue sempre almeno una volta",
+		  "WHILE è più veloce",
+		  "DO-WHILE può contenere solo operazioni semplici",
+		  "WHILE può contenere solo confronti"
+		],
+		"correctAnswer": "DO-WHILE esegue sempre almeno una volta",
+		"explanation": "Nel DO-WHILE il test della condizione viene fatto alla fine, garantendo almeno una esecuzione del blocco di codice."
+	  },
+	  {
+		"id": "f19",
+		"type": "flowchart",
+		"question": "In un algoritmo, cosa significa 'invariante di ciclo'?",
+		"options": [
+		  "Una condizione che rimane vera durante tutte le iterazioni",
+		  "Una variabile che non cambia valore",
+		  "Un ciclo che non termina mai",
+		  "Una condizione di uscita dal ciclo"
+		],
+		"correctAnswer": "Una condizione che rimane vera durante tutte le iterazioni",
+		"explanation": "L'invariante di ciclo è una proprietà che si mantiene vera prima, durante e dopo ogni iterazione del ciclo."
+	  },
+	  {
+		"id": "f20",
+		"type": "flowchart",
+		"question": "Cosa significa 'inizializzare una variabile'?",
+		"options": [
+		  "Assegnarle un valore iniziale",
+		  "Dichiararla senza valore",
+		  "Usarla in un ciclo",
+		  "Cancellarla dalla memoria"
+		],
+		"correctAnswer": "Assegnarle un valore iniziale",
+		"explanation": "Inizializzare una variabile significa assegnarle un valore iniziale prima di utilizzarla, per evitare comportamenti indefiniti."
+	  }
+	]
+  }

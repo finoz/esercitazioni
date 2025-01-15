@@ -1,0 +1,244 @@
+{
+	"questions": [
+		{
+			"id": "b1",
+			"type": "binary",
+			"question": "Converti il numero binario 1101 in decimale",
+			"options": ["13", "11", "15", "14"],
+			"correctAnswer": "13",
+			"explanation": "1101 = 1×2³ + 1×2² + 0×2¹ + 1×2⁰ = 8 + 4 + 0 + 1 = 13"
+		  },
+		  {
+			"id": "b2",
+			"type": "binary",
+			"question": "Quanto vale in decimale il numero binario 10110?",
+			"options": ["22", "20", "24", "26"],
+			"correctAnswer": "22",
+			"explanation": "10110 = 1×2⁴ + 0×2³ + 1×2² + 1×2¹ + 0×2⁰ = 16 + 0 + 4 + 2 + 0 = 22"
+		  },
+		  {
+			"id": "b3",
+			"type": "binary",
+			"question": "Converti 11111 in decimale",
+			"options": ["31", "30", "29", "32"],
+			"correctAnswer": "31",
+			"explanation": "11111 = 1×2⁴ + 1×2³ + 1×2² + 1×2¹ + 1×2⁰ = 16 + 8 + 4 + 2 + 1 = 31"
+		  },
+		  {
+			"id": "b4",
+			"type": "binary",
+			"question": "Quanto vale in decimale 100101?",
+			"options": ["37", "35", "39", "41"],
+			"correctAnswer": "37",
+			"explanation": "100101 = 1×2⁵ + 0×2⁴ + 0×2³ + 1×2² + 0×2¹ + 1×2⁰ = 32 + 0 + 0 + 4 + 0 + 1 = 37"
+		  },
+		  {
+			"id": "b5",
+			"type": "binary",
+			"question": "Converti 101010 in decimale",
+			"options": ["42", "40", "44", "46"],
+			"correctAnswer": "42",
+			"explanation": "101010 = 1×2⁵ + 0×2⁴ + 1×2³ + 0×2² + 1×2¹ + 0×2⁰ = 32 + 0 + 8 + 0 + 2 + 0 = 42"
+		  },
+		  {
+			"id": "b6",
+			"type": "binary",
+			"question": "Quanto vale 111000 in decimale?",
+			"options": ["56", "54", "58", "60"],
+			"correctAnswer": "56",
+			"explanation": "111000 = 1×2⁵ + 1×2⁴ + 1×2³ + 0×2² + 0×2¹ + 0×2⁰ = 32 + 16 + 8 + 0 + 0 + 0 = 56"
+		  },
+		  {
+			"id": "b7",
+			"type": "binary",
+			"question": "Converti 110011 in decimale",
+			"options": ["51", "49", "53", "55"],
+			"correctAnswer": "51",
+			"explanation": "110011 = 1×2⁵ + 1×2⁴ + 0×2³ + 0×2² + 1×2¹ + 1×2⁰ = 32 + 16 + 0 + 0 + 2 + 1 = 51"
+		  },
+		  {
+			"id": "b8",
+			"type": "binary",
+			"question": "Quanto vale 101111 in decimale?",
+			"options": ["47", "45", "49", "51"],
+			"correctAnswer": "47",
+			"explanation": "101111 = 1×2⁵ + 0×2⁴ + 1×2³ + 1×2² + 1×2¹ + 1×2⁰ = 32 + 0 + 8 + 4 + 2 + 1 = 47"
+		  },
+		  {
+			"id": "b9",
+			"type": "binary",
+			"question": "Converti 1000001 in decimale",
+			"options": ["65", "63", "67", "69"],
+			"correctAnswer": "65",
+			"explanation": "1000001 = 1×2⁶ + 0×2⁵ + 0×2⁴ + 0×2³ + 0×2² + 0×2¹ + 1×2⁰ = 64 + 0 + 0 + 0 + 0 + 0 + 1 = 65"
+		  },
+		  {
+			"id": "b10",
+			"type": "binary",
+			"question": "Quanto vale 1100100 in decimale?",
+			"options": ["100", "98", "102", "96"],
+			"correctAnswer": "100",
+			"explanation": "1100100 = 1×2⁶ + 1×2⁵ + 0×2⁴ + 0×2³ + 1×2² + 0×2¹ + 0×2⁰ = 64 + 32 + 0 + 0 + 4 + 0 + 0 = 100"
+		  },
+		  {
+			"id": "b11",
+			"type": "binary",
+			"question": "Come si scrive 19 in binario?",
+			"options": ["10011", "10101", "10001", "10111"],
+			"correctAnswer": "10011",
+			"explanation": "19 = 16 + 2 + 1, quindi 10011 (16=2⁴, 2=2¹, 1=2⁰)"
+		  },
+		  {
+			"id": "b12",
+			"type": "binary",
+			"question": "Converti 26 in binario",
+			"options": ["11010", "11001", "11011", "11100"],
+			"correctAnswer": "11010",
+			"explanation": "26 = 16 + 8 + 2, quindi 11010 (16=2⁴, 8=2³, 2=2¹)"
+		  },
+		  {
+			"id": "b13",
+			"type": "binary",
+			"question": "Come si scrive 35 in binario?",
+			"options": ["100011", "100010", "100101", "100100"],
+			"correctAnswer": "100011",
+			"explanation": "35 = 32 + 2 + 1, quindi 100011 (32=2⁵, 2=2¹, 1=2⁰)"
+		  },
+		  {
+			"id": "b14",
+			"type": "binary",
+			"question": "Converti 44 in binario",
+			"options": ["101100", "101010", "101110", "101001"],
+			"correctAnswer": "101100",
+			"explanation": "44 = 32 + 8 + 4, quindi 101100 (32=2⁵, 8=2³, 4=2²)"
+		  },
+		  {
+			"id": "b15",
+			"type": "binary",
+			"question": "Come si scrive 53 in binario?",
+			"options": ["110101", "110110", "110011", "110100"],
+			"correctAnswer": "110101",
+			"explanation": "53 = 32 + 16 + 4 + 1, quindi 110101 (32=2⁵, 16=2⁴, 4=2², 1=2⁰)"
+		  },
+		  {
+			"id": "b16",
+			"type": "binary",
+			"question": "Calcola: 1010 + 0011",
+			"options": ["1101", "1110", "1100", "1111"],
+			"correctAnswer": "1101",
+			"explanation": "1010 (10) + 0011 (3) = 1101 (13)"
+		  },
+		  {
+			"id": "b17",
+			"type": "binary",
+			"question": "Quanto fa 1111 + 0001?",
+			"options": ["10000", "10001", "1111", "10010"],
+			"correctAnswer": "10000",
+			"explanation": "1111 (15) + 0001 (1) = 10000 (16)"
+		  },
+		  {
+			"id": "b18",
+			"type": "binary",
+			"question": "Calcola: 1100 + 1100",
+			"options": ["11000", "11100", "10100", "11001"],
+			"correctAnswer": "11000",
+			"explanation": "1100 (12) + 1100 (12) = 11000 (24)"
+		  },
+		  {
+			"id": "b19",
+			"type": "binary",
+			"question": "Quanto fa 10101 + 01010?",
+			"options": ["11111", "100000", "11110", "11101"],
+			"correctAnswer": "11111",
+			"explanation": "10101 (21) + 01010 (10) = 11111 (31)"
+		  },
+		  {
+			"id": "b20",
+			"type": "binary",
+			"question": "Calcola: 11111 + 00001",
+			"options": ["100000", "100001", "11111", "11110"],
+			"correctAnswer": "100000",
+			"explanation": "11111 (31) + 00001 (1) = 100000 (32)"
+		  },	  
+		  {
+			"id": "b41",
+			"type": "binary",
+			"question": "Converti 2.75 in binario",
+			"options": ["10.11", "10.1", "11.11", "10.01"],
+			"correctAnswer": "10.11",
+			"explanation": "2.75 = 2 + 0.75. La parte intera 2 è 10, 0.75 in binario è 0.11 (0.5 + 0.25), quindi 10.11"
+		  },
+		  {
+			"id": "b42",
+			"type": "binary",
+			"question": "Qual è la rappresentazione binaria di 4.5?",
+			"options": ["100.1", "100.01", "101.1", "100.11"],
+			"correctAnswer": "100.1",
+			"explanation": "4.5 = 4 + 0.5. La parte intera 4 è 100, 0.5 in binario è 0.1, quindi 100.1"
+		  },
+		  {
+			"id": "b43",
+			"type": "binary",
+			"question": "Come si scrive 1.75 in binario?",
+			"options": ["1.11", "1.101", "10.11", "1.001"],
+			"correctAnswer": "1.11",
+			"explanation": "1.75 = 1 + 0.75. La parte intera 1 è 1, 0.75 in binario è 0.11 (0.5 + 0.25), quindi 1.11"
+		  },
+		  {
+			"id": "b44",
+			"type": "binary",
+			"question": "Converti 6.25 in binario",
+			"options": ["110.01", "110.1", "111.01", "110.11"],
+			"correctAnswer": "110.01",
+			"explanation": "6.25 = 6 + 0.25. La parte intera 6 è 110, 0.25 in binario è 0.01, quindi 110.01"
+		  },
+		  {
+			"id": "b45",
+			"type": "binary",
+			"question": "Qual è la rappresentazione binaria di 3.5?",
+			"options": ["11.1", "11.01", "100.1", "11.11"],
+			"correctAnswer": "11.1",
+			"explanation": "3.5 = 3 + 0.5. La parte intera 3 è 11, 0.5 in binario è 0.1, quindi 11.1"
+		  },
+		  {
+			"id": "b46",
+			"type": "binary",
+			"question": "Come si scrive 7.5 in binario?",
+			"options": ["111.1", "111.01", "1000.1", "111.11"],
+			"correctAnswer": "111.1",
+			"explanation": "7.5 = 7 + 0.5. La parte intera 7 è 111, 0.5 in binario è 0.1, quindi 111.1"
+		  },
+		  {
+			"id": "b47",
+			"type": "binary",
+			"question": "Converti 2.25 in binario",
+			"options": ["10.01", "10.1", "10.001", "10.11"],
+			"correctAnswer": "10.01",
+			"explanation": "2.25 = 2 + 0.25. La parte intera 2 è 10, 0.25 in binario è 0.01, quindi 10.01"
+		  },
+		  {
+			"id": "b48",
+			"type": "binary",
+			"question": "Qual è la rappresentazione binaria di 5.75?",
+			"options": ["101.11", "101.1", "110.11", "101.01"],
+			"correctAnswer": "101.11",
+			"explanation": "5.75 = 5 + 0.75. La parte intera 5 è 101, 0.75 in binario è 0.11 (0.5 + 0.25), quindi 101.11"
+		  },
+		  {
+			"id": "b49",
+			"type": "binary",
+			"question": "Converti in binario il numero decimale 5.5",
+			"options": ["101.1", "101.01", "110.1", "101.11"],
+			"correctAnswer": "101.1",
+			"explanation": "5.5 = 5 + 0.5. La parte intera 5 è 101, 0.5 in binario è 0.1, quindi 101.1"
+		  },
+		  {
+			"id": "b50",
+			"type": "binary",
+			"question": "Come si scrive 3.25 in binario?",
+			"options": ["11.01", "11.1", "11.001", "11.11"],
+			"correctAnswer": "11.01",
+			"explanation": "3.25 = 3 + 0.25. La parte intera 3 è 11, 0.25 in binario è 0.01, quindi 11.01"
+		  }
+	]
+  }
