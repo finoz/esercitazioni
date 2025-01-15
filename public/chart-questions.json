@@ -148,7 +148,7 @@
 			"id": "vf14",
 			"type": "flowchart",
 			"question": "Cosa fa questo algoritmo?",
-			"diagram": "flowchart TB\n    Start([Start]) --> Input[/Definisci stringa/]\n    Input --> Init[i = 0\nj = lunghezza - 1]\n    Init --> While{i < j}\n    While -->|Sì| Check{str[i] != str[j]}\n    Check -->|Sì| No[/Stampa 'No'/]\n    Check -->|No| Inc[i = i + 1\nj = j - 1]\n    Inc --> While\n    While -->|No| Yes[/Stampa 'Sì'/]\n    Yes --> End([End])\n    No --> End",
+			"diagram": "flowchart TB\n    Start([Start]) --> Input[/Definisci stringa/]\n    Input --> Init[i = 0<br>j = lunghezza - 1]\n    Init --> While{i < j}\n    While -->|Sì| Check{str[i] != str[j]}\n    Check -->|Sì| No[/Stampa 'No'/]\n    Check -->|No| Inc[i = i + 1<br>j = j - 1]\n    Inc --> While\n    While -->|No| Yes[/Stampa 'Sì'/]\n    Yes --> End([End])\n    No --> End",
 			"options": [
 			  "Verifica se è palindroma (plaindromo = Parola o frase leggibile uguale al contrario, es: 'anna', 'otto')",
 			  "Conta le vocali",
